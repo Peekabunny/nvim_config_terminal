@@ -17,7 +17,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   }
 end
 vim.opt.rtp:prepend(lazypath)
-
 -- 3. Plugin configuration
 require('lazy').setup {
   require 'plugins.colortheme',
@@ -33,4 +32,7 @@ require('lazy').setup {
   require 'plugins.alpha',
   require 'plugins.indent-blankline',
   require 'plugins.misc',
+  require 'plugins.toggleterm',
+  require 'plugins.autotag',
+  require 'plugins.cmake-tools',
 }
